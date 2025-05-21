@@ -29,10 +29,27 @@ import '../css/test.css'
   <div class="container">
  <div class="box-container">
       <div class="left-box" >
-      <img src="../images/Sy/test.png" class="productImg" alt="picture">
+      <img src="../images/Sy/test.png"  alt="picture">
       </div>
       <div class="right-box">
-        <h1>qwe</h1>
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="radio" checked="">
+            <span class="name">首页/商品/手机</span>
+          </label>
+        </div>
+      <h1>Ipad 2024款</h1>
+      <div class="price-box">
+        <div class="price-front">现价:998.00</div>
+        <div class="price-behind">
+          <div>原价:</div><div class="behind-line-price">￥999.99</div>
+        </div>
+
+      </div>
+        <div class="detail">
+          这是介绍商品简介的地方
+        </div>
+        <div>规格选择</div>
       </div>
     </div>
   </div>

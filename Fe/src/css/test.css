@@ -6,13 +6,7 @@
   display: inline-block; /* 确保图片与 icons 同行显示 */
   height: 4rem; /* 根据需要调整图片大小 */
 }
-.productImg{
-  display: inline-block; /* 确保图片与 icons 同行显示 */
-  border-radius: 30px;
-  width: 800px;
-  height: 450px;
 
-}
 header{
   background:#fff;
   padding:5px 2% 5px 8%;
@@ -88,4 +82,88 @@ header .logo span{
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+}
+.container .box-container .left-box {
+  width: 800px; /* 设置宽度为800px */
+  height: 450px; /* 设置高度为450px */
+  display: flex; /* 使用flex布局 */
+  align-items: center; /* 垂直居中图片 */
+  justify-content: center; /* 水平居中图片 */
+  overflow: hidden; /* 确保图片不会溢出容器 */
+}
+
+.container .box-container .left-box img {
+  width: 100%; /* 图片宽度占满容器 */
+  height: 100%; /* 图片高度占满容器 */
+  object-fit: contain; /* 确保图片按比例填充容器 */
+  border-radius: 30px; /* 保持圆角 */
+}
+
+.container .box-container .right-box {
+  margin-left: 20px; /* 紧贴left-box，可根据需要调整间距 */
+  flex: 1; /* 占据剩余空间 */
+  align-items: center; /* 垂直居中内容 */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 8px;
+  min-width: 320px;
+}
+.container .box-container .right-box .price-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.container .box-container .right-box .price-box .price-front{
+
+}
+
+.container .box-container .right-box .price-box .price-behind{
+  display: flex;
+  margin-left: 20px;
+}
+.container .box-container .right-box .price-box .price-behind .behind-line-price{
+
+  text-decoration: line-through; /* 添加中间的横线 */
+}
+
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
 }
