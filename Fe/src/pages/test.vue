@@ -47,11 +47,53 @@ import '../css/test.css'
 
       </div>
         <div class="detail">
-          这是介绍商品简介的地方
+          iPad Pro 2021，是苹果公司推出的一款平板电脑，北京时间2021年4月21日凌晨，iPad Pro在2021苹果春季新品发布会上正式发布。iPad Pro 2021分为11英寸和12.9英寸两种版本，颜色有深空灰色和银色两种颜色可选，搭载最新的M1芯片，后置一颗1200万像素广角摄像头和一颗1000万像素超广角摄像头，前置采用一颗1200万像素深感摄像头，支持人物居中和面容ID。
         </div>
-        <div>规格选择</div>
+        <div><button id="bottone5">立即购买</button></div>
       </div>
+
     </div>
+    <div class="downBox">
+      <div>规格选择:</div>
+      <!-- 选择开始-->
+      <div class="wrapper">
+        <div class="card">
+          <input class="input" type="radio" name="card" value="basic">
+          <span class="check"></span>
+          <label class="label">
+            <div class="title">基础款</div>
+            <div class="price">
+              <span class="span">￥</span>
+              998
+            </div>
+          </label>
+        </div>
+        <div class="card">
+          <input class="input" type="radio" name="card" value="standart">
+          <span class="check"></span>
+          <label class="label">
+            <div class="title">高配款</div>
+            <div class="price">
+              <span class="span">￥</span>
+              1299
+            </div>
+          </label>
+        </div>
+        <div class="card">
+          <input class="input" type="radio" name="card" value="premium">
+          <span class="check"></span>
+          <label class="label">
+            <div class="title">豪华版</div>
+            <div class="price">
+              <span class="span">￥</span>
+              999999
+            </div>
+          </label>
+        </div>
+      </div>
+      <!--选择结束-->
+    </div>
+
   </div>
   <!--商品详细页面末尾-->
 

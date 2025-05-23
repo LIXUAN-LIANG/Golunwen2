@@ -81,7 +81,7 @@ header .logo span{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding-left: 2rem;
 }
 .container .box-container .left-box {
   width: 800px; /* 设置宽度为800px */
@@ -118,7 +118,8 @@ header .logo span{
     gap: 8px;
 }
 .container .box-container .right-box .price-box .price-front{
-
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .container .box-container .right-box .price-box .price-behind{
@@ -129,6 +130,15 @@ header .logo span{
 
   text-decoration: line-through; /* 添加中间的横线 */
 }
+
+.downBox{
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
+
+
 
 .radio-inputs {
   position: relative;
@@ -167,3 +177,163 @@ header .logo span{
   background-color: #fff;
   font-weight: 600;
 }
+
+/*Button按钮css*/
+/* From Uiverse.io by TCdesign-dev */
+#bottone5 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+#bottone5:hover,
+#bottone5:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#bottone5:hover {
+  transform: translateY(-1px);
+}
+
+#bottone5:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+/*button按钮结束*/
+
+
+/*选择css开始*/
+/* From Uiverse.io by andrew-demchenk0 */
+.wrapper {
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.input {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 1px 1px 10px #aaaaaa,
+  -1px -1px 10px #ffffff;
+}
+
+.input + .check::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d0d0d0;
+  border-radius: 50%;
+  background-color: #E8E8E8;
+}
+
+.input:checked + .check::after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255,0,0,0.7);
+  border-radius: 50%;
+}
+
+.input[value="standart"]:checked + .check::after {
+  background-color: rgba(255,165,0,0.7);
+}
+
+.input[value="premium"]:checked + .check::after {
+  background-color: rgba(0,128,0,0.7);
+}
+
+.input[value="basic"]:checked {
+  border: 1.5px solid rgba(255,0,0,0.7);
+}
+
+.input[value="standart"]:checked {
+  border: 1.5px solid rgba(255,165,0,0.7);
+}
+
+.input[value="premium"]:checked {
+  border: 1.5px solid rgba(0,128,0,0.7);
+}
+
+.label {
+  color: #323232;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.label .title {
+  margin: 15px 0 0 15px;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+.label .price {
+  margin: 20px 0 0 15px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.label .span {
+  color: gray;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/*选择css结束*/
